@@ -27,7 +27,7 @@ urlpatterns = [
     path('boards/<int:pk>/topics/<int:topic_pk>/reply/',reply_topic, name='reply_topic'),
     path('boards/<int:pk>/topics/<int:topic_pk>/',topic_posts, name='topic_posts'),
     path('boards/<int:pk>/new/', new_topic, name='new_topic'),
-    path('boards/<int:pk>/', board_topics, name='board_topics'),
+    path('boards/<int:pk>/', TopicListView.as_view(), name='board_topics'),
     path('signup/', accounts_views.signup, name='signup'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
