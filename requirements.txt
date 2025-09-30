@@ -1,0 +1,12 @@
+asgiref==3.9.2
+beautifulsoup4==4.14.2
+bs4==0.0.2
+Django==5.2.6
+django-stubs==5.2.5
+django-stubs-ext==5.2.5
+django-widget-tweaks==1.5.0
+soupsieve==2.8
+sqlparse==0.5.3
+tomli==2.2.1
+types-PyYAML==6.0.12.20250915
+typing_extensions==4.15.0
