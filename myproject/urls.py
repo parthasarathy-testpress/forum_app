@@ -23,6 +23,8 @@ from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home,name='home'),
+    path('boards/<int:pk>/topics/<int:topic_pk>/reply/',reply_topic, name='reply_topic'),
+    path('boards/<int:pk>/topics/<int:topic_pk>/',topic_posts, name='topic_posts'),
     path('boards/<int:pk>/new/', new_topic, name='new_topic'),
     path('boards/<int:pk>/', board_topics, name='board_topics'),
     path('signup/', accounts_views.signup, name='signup'),
