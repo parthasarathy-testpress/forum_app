@@ -5,6 +5,7 @@ Django==5.2.6
 django-stubs==5.2.5
 django-stubs-ext==5.2.5
 django-widget-tweaks==1.5.0
+Markdown==3.9
 soupsieve==2.8
 sqlparse==0.5.3
 tomli==2.2.1
